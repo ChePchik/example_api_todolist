@@ -1,10 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
-
+app.use(cors())
 app.use(express.static(__dirname + "/public"));
 
 // Получение списка дел
