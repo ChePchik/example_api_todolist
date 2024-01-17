@@ -1,0 +1,5 @@
+- GET /api/todos возвращает список всех дел.
+- GET /api/todos/:id возвращает дело по его ID.
+- POST /api/todos добавляет новое дело в список.
+- DELETE /api/todos/:id удаляет дело по его ID.
+- PUT /api/todos обновляет информацию о делах.
