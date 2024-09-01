@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors());
 app.use(express.static(__dirname + "/public"));
 
 // Получение списка дел
@@ -88,5 +88,5 @@ app.put("/api/todos", (req, res) => {
 });
 
 app.listen(3000, () => {
-	console.log("Сервер ожидает подключения...");
+	console.log("Сервер ожидает подключения на http://localhost:3000");
 });
